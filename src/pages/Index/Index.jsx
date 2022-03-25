@@ -2,6 +2,7 @@ import React, { Component, createRef } from 'react'
 import '../../App.css'
 import Nav from '../../components/Nav/Nav'
 import S1 from '../../components/S1/S1'
+import Calculator from '../../components/Calculator/Calculator'
 import Footer from '../../components/Footer/Footer'
 import sun from '../../Img/sun.png'
 import moon from '../../Img/moon.png'
@@ -45,6 +46,7 @@ class Home extends Component {
                     toggleMode={this.toggleMode}
                 />
                 <S1 />
+                <Calculator />
                 <Footer />
             </div>
         )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Icon, Divider, Card, Grid, Button, Image, TransitionablePortal, Loader } from 'semantic-ui-react'
+import { Navbar, Container, Row, Col, Image, Form, FormControl, Button } from 'react-bootstrap';
 import '../../App.css';
 
 class S1 extends Component {
@@ -17,18 +17,18 @@ class S1 extends Component {
         const { open } = this.state
         return (
             <div className="s1">
-                <Grid>
-                    <Grid.Row columns={1}>
-                        <Grid.Column>
+                <Container>
+                    <Row columns={1}>
+                        <Col>
                             <Container text>
                                 <h1 className="s1TitleSub">The Show Lowdown Index </h1>
                                 <h5 className="s1">A breakdown of the most popular streaming services' pricing tiers and interactive costs total calculator.</h5>
                             </Container>
                             <br></br>
                             <br></br>
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
+                        </Col>
+                    </Row>
+                </Container>
 
                 <br></br>
             </div>
