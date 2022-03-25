@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Card, Container, Row, Col, Image, Form, FormControl, Button } from 'react-bootstrap';
 import '../../App.css';
 import apple from '../../Img/apple.png'
-// import apple from '../../Img/apple.png'
+import amazon from '../../Img/amazon.png'
 import cr from '../../Img/cr.png'
-// import apple from '../../Img/apple.png'
+import disney from '../../Img/disney.png'
 
 class Calculator extends Component {
     state = {
@@ -27,13 +27,13 @@ class Calculator extends Component {
                             <Image className="icon" src={apple} />
                         </Col>
                         <Col>
-                            <Image className="icon" src={apple} />
+                            <Image className="icon" src={amazon} />
                         </Col>
                         <Col>
                             <Image className="icon" src={cr} />
                         </Col>
                         <Col>
-                            <Image className="icon" src={apple} />
+                            <Image className="icon" src={disney} />
                         </Col>
                     </Row>
                     <br></br>
