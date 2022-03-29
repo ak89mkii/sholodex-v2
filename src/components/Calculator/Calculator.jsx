@@ -24,8 +24,8 @@ class Calculator extends Component {
         const { open } = this.state
         return (
             <div className="cardText">
-                <Container>
-                    <h1>$150</h1>
+                <Container text>
+                        <h1 className="total">$150</h1>
                 </Container>
                  <Container>
                     <Row columns={1}>
@@ -42,7 +42,7 @@ class Calculator extends Component {
                             <Image className="icon" src={disney} />
                         </Col>
                     </Row>
-                    <br></br>
+                    {/* <br></br> */}
 
                     <Row columns={1}>
                         <Col>
@@ -58,7 +58,7 @@ class Calculator extends Component {
                             <Image className="icon" src={netflix} />
                         </Col>
                     </Row>
-                    <br></br>
+                    {/* <br></br> */}
 
                     <Row columns={1}>
                         <Col>
