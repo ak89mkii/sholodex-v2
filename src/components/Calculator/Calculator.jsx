@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Container, Row, Col, Image, Form, FormControl, Button } from 'react-bootstrap';
+import { Card, Container, Row, Col, Image, Modal, FormControl, Button } from 'react-bootstrap';
 import '../../App.css';
 import apple from '../../Img/apple.png'
 import amazon from '../../Img/amazon.png'
@@ -11,29 +11,61 @@ import netflix from '../../Img/netflix.png'
 import paramount from '../../Img/paramount.png'
 import peacock from '../../Img/peacock.png'
 import funimation from '../../Img/funimation.png'
+import Popup from '../Popup/Popup'
 
 class Calculator extends Component {
     state = {
-        open: false
+        appleShow: false,
+        amazonShow: false,
+        amount: 0
     }
 
-    handleClick = () => this.setState((prevState) => ({ open: !prevState.open }))
-    handleClose = () => this.setState({ open: false })
+    // Function Apple: 
+    appleAddClick = () => this.setState((prevState) => ({ appleShow: !prevState.appleShow, }))
+    appleAddClose = () => this.setState({ appleShow: false })
+    appleAdd = () => {
+        this.setState({
+            amount: this.state.amount + 5,
+        })
+    }
+    
+    // Function Amazon:
+    amazonAddClick = () => this.setState((prevState) => ({ amazonShow: !prevState.amazonShow, }))
+    amazonAddClose = () => this.setState({ amazonShow: false })
+    amazonAdd = () => {
+        this.setState({
+            amount: this.state.amount + 9,
+        })
+    }
 
     render() {
-        const { open } = this.state
+        const { appleShow } = this.state
+        const { amazonShow } = this.state
         return (
             <div className="cardText">
+                <Popup 
+                    appleShow={appleShow}
+                    appleAddClose={this.appleAddClose}
+                    appleAdd={this.appleAdd}
+
+                    amazonShow={amazonShow}
+                    amazonAddClose={this.amazonAddClose}
+                    amazonAdd={this.amazonAdd}
+                />
                 <Container text>
-                        <h1 className="total">$150</h1>
+                    <div className="total">
+                        <h1>Subscriptions Total</h1>
+                        <h5>(Cost Rounded to Nearest Dollar)</h5>
+                        <h1>${this.state.amount}</h1>
+                    </div>
                 </Container>
                  <Container>
                     <Row columns={1}>
                         <Col>
-                            <Image className="icon" src={apple} />
+                            <Image className="icon" src={apple} onClick={this.appleAddClick}/>
                         </Col>
                         <Col>
-                            <Image className="icon" src={amazon} />
+                            <Image className="icon" src={amazon} onClick={this.amazonAddClick}/>
                         </Col>
                         <Col>
                             <Image className="icon" src={cr} />

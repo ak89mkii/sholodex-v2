@@ -102,14 +102,15 @@
 
 .total {
   border-style: solid;
-  border-width: 5px;
-  border-radius: 10px;
+  border-width: 10px;
+  border-radius: 15px;
   width: 400px;
-  background-color: cornflowerblue;
+  background-color: rgb(75, 125, 226);
   text-align: center;  
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
 
 /* Footer: */
 
