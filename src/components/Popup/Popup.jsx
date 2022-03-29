@@ -12,13 +12,13 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Apple TV+</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Apple TV+ offers a 7 day free trial, then costs $4.99 per month.</Modal.Body>
+                <Modal.Body>Apple TV+ offers a 7 day free trial, then costs $4.99 per month. There is currently only one subscription tier.</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={props.appleAdd}>
-                        + Standard $4.99
-                    </Button>
-                    <Button variant="primary" onClick={props.appleAddClose}>
-                        Close
+                    <Container>
+                        <h5 className='s1'>Select a Tier:</h5>
+                    </Container>
+                    <Button variant="warning" onClick={props.appleAdd}>
+                        Apple TV+ $4.99
                     </Button>
                 </Modal.Footer>
             </Modal>
@@ -28,13 +28,16 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Amazon Prime Video</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Amazon Prime Video offers a 30 day free trial, then costs $8.99 per month.</Modal.Body>
+                <Modal.Body>Amazon Prime Video offers a 30 day free trial, then costs $8.99 per month (Prime Video Only) or $14.99 per month (Full Amazon Prime). You can also pay an upfront cost of $139 for a yearly membership, costing about $40  less than paying $14.99 per month for a year (Totaling $180). </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={props.amazonAdd}>
-                        + Standard $8.99
+                    <Container>
+                        <h5 className='s1'>Select a Tier:</h5>
+                    </Container>
+                    <Button variant="warning" onClick={props.amazonAdd}>
+                        Prime Video Only $8.99
                     </Button>
-                    <Button variant="primary" onClick={props.amazonAddClose}>
-                        Close
+                    <Button variant="warning" onClick={props.amazonAdd2}>
+                        Full Prime $14.99
                     </Button>
                 </Modal.Footer>
             </Modal>

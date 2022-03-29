@@ -37,6 +37,11 @@ class Calculator extends Component {
             amount: this.state.amount + 9,
         })
     }
+    amazonAdd2 = () => {
+        this.setState({
+            amount: this.state.amount + 15,
+        })
+    }
 
     render() {
         const { appleShow } = this.state
@@ -51,6 +56,7 @@ class Calculator extends Component {
                     amazonShow={amazonShow}
                     amazonAddClose={this.amazonAddClose}
                     amazonAdd={this.amazonAdd}
+                    amazonAdd2={this.amazonAdd2}
                 />
                 <Container text>
                     <div className="total">
