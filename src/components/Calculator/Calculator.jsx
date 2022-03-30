@@ -16,7 +16,9 @@ import Popup from '../Popup/Popup'
 class Calculator extends Component {
     state = {
         appleShow: false,
+        appleIcon: undefined,
         amazonShow: false,
+        amazonIcon: undefined,
         amount: 0
     }
 
@@ -26,6 +28,7 @@ class Calculator extends Component {
     appleAdd = () => {
         this.setState({
             amount: this.state.amount + 5,
+            appleIcon: apple,
         })
     }
     
@@ -35,11 +38,13 @@ class Calculator extends Component {
     amazonAdd = () => {
         this.setState({
             amount: this.state.amount + 9,
+            amazonIcon: amazon,
         })
     }
     amazonAdd2 = () => {
         this.setState({
             amount: this.state.amount + 15,
+            amazonIcon: amazon,
         })
     }
 
@@ -63,6 +68,8 @@ class Calculator extends Component {
                         <h1>Subscriptions Total</h1>
                         <h5>(Cost Rounded to Nearest Dollar)</h5>
                         <h1>${this.state.amount}</h1>
+                        <img className="icon2" src={this.state.appleIcon}/>
+                        <img className="icon2" src={this.state.amazonIcon}/>
                     </div>
                 </Container>
                  <Container>
