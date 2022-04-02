@@ -116,12 +116,13 @@
   margin: 5px;
 }
 .number {
-  background-color: rgb(238, 255, 106);
+  background-color: white;
   color: rgb(0, 0, 0);
   border-width: 5px;
   border-radius: 15px;
-  width: 150px;
+  border-color:  white;
   border-style: solid;
+  width: 150px;
   text-align: center;  
   margin: 0 auto;
   margin-bottom: 10px;

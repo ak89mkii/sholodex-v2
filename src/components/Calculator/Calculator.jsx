@@ -25,10 +25,14 @@ class Calculator extends Component {
     appleAddClick = () => this.setState((prevState) => ({ appleShow: !prevState.appleShow, }))
     appleAddClose = () => this.setState({ appleShow: false })
     appleAdd = () => {
-        this.setState(prevState => ({
-            amount: this.state.amount + 5,
-            selectedIcon: [...prevState.selectedIcon, apple]
-        }))
+        if (this.state.selectedIcon.indexOf(apple) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 5,
+                selectedIcon: [...prevState.selectedIcon, apple]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
     }
     
     // Function Amazon:
@@ -48,23 +52,64 @@ class Calculator extends Component {
     }
 
     render() {
-        const { appleShow } = this.state
-        const { amazonShow } = this.state
         return (
             <div className="cardText">
                 <Popup 
-                    appleShow={appleShow}
+                    // Modals: 1 to 4
+                    appleShow={this.state.appleShow}
                     appleAddClose={this.appleAddClose}
                     appleAdd={this.appleAdd}
 
-                    amazonShow={amazonShow}
+                    amazonShow={this.state.amazonShow}
+                    amazonAddClose={this.amazonAddClose}
+                    amazonAdd={this.amazonAdd}
+                    amazonAdd2={this.amazonAdd2}
+
+                    crShow={this.state.crShow}
+                    crAddClose={this.crAddClose}
+                    crAdd={this.crAdd}
+                    crAdd2={this.crAdd2}
+
+                    disneyShow={this.state.amazonShow}
+                    disneyAddClose={this.disneyAddClose}
+                    disneyAdd={this.disneyAdd}
+                    disneyAdd2={this.disneyAdd2}
+
+                    // Modals: 5 to 8
+                    funimationShow={this.state.amazonShow}
+                    funimationAddClose={this.amazonAddClose}
+                    funimationAdd={this.amazonAdd}
+                    funimationAdd2={this.amazonAdd2}
+
+                    amazonShow={this.state.amazonShow}
+                    amazonAddClose={this.amazonAddClose}
+                    amazonAdd={this.amazonAdd}
+                    amazonAdd2={this.amazonAdd2}
+
+                    amazonShow={this.state.amazonShow}
+                    amazonAddClose={this.amazonAddClose}
+                    amazonAdd={this.amazonAdd}
+                    amazonAdd2={this.amazonAdd2}
+
+                    amazonShow={this.state.amazonShow}
+                    amazonAddClose={this.amazonAddClose}
+                    amazonAdd={this.amazonAdd}
+                    amazonAdd2={this.amazonAdd2}
+                    
+                    // Modals: 9 to 10
+                    amazonShow={this.state.amazonShow}
+                    amazonAddClose={this.amazonAddClose}
+                    amazonAdd={this.amazonAdd}
+                    amazonAdd2={this.amazonAdd2}
+
+                    amazonShow={this.state.amazonShow}
                     amazonAddClose={this.amazonAddClose}
                     amazonAdd={this.amazonAdd}
                     amazonAdd2={this.amazonAdd2}
                 />
                 <Container text>
                     <div className="total">
-                        <h1>Subscriptions Total</h1>
+                        <h1>Month Total</h1>
                         <h5>(Cost Rounded to Nearest Dollar)</h5>
                         <h1 className="number">${this.state.amount}</h1>
                         {this.state.selectedIcon.map((icon) => (
