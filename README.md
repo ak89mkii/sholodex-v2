@@ -21,7 +21,9 @@ The Show Lowdown Index. A breakdown of the most popular streaming services' pric
 #### Development Environment:
 
 #### Information References:
-// 
+// https://www.w3schools.com/jsref/met_win_alert.asp
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+// https://stackoverflow.com/questions/44046037/if-else-statement-inside-jsx-reactjs
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:

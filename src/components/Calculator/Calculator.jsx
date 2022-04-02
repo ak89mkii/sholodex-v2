@@ -81,31 +81,31 @@ class Calculator extends Component {
                     funimationAdd={this.amazonAdd}
                     funimationAdd2={this.amazonAdd2}
 
-                    amazonShow={this.state.amazonShow}
-                    amazonAddClose={this.amazonAddClose}
-                    amazonAdd={this.amazonAdd}
-                    amazonAdd2={this.amazonAdd2}
+                    hboShow={this.state.amazonShow}
+                    hboAddClose={this.amazonAddClose}
+                    hboAdd={this.amazonAdd}
+                    hboAdd2={this.amazonAdd2}
 
-                    amazonShow={this.state.amazonShow}
-                    amazonAddClose={this.amazonAddClose}
-                    amazonAdd={this.amazonAdd}
-                    amazonAdd2={this.amazonAdd2}
+                    huluShow={this.state.amazonShow}
+                    huluAddClose={this.amazonAddClose}
+                    huluhuluAdd={this.amazonAdd}
+                    huluAdd2={this.amazonAdd2}
 
-                    amazonShow={this.state.amazonShow}
-                    amazonAddClose={this.amazonAddClose}
-                    amazonAdd={this.amazonAdd}
-                    amazonAdd2={this.amazonAdd2}
+                    netflixShow={this.state.amazonShow}
+                    netflixAddClose={this.amazonAddClose}
+                    netflixAdd={this.amazonAdd}
+                    netflixAdd2={this.amazonAdd2}
                     
                     // Modals: 9 to 10
-                    amazonShow={this.state.amazonShow}
-                    amazonAddClose={this.amazonAddClose}
-                    amazonAdd={this.amazonAdd}
-                    amazonAdd2={this.amazonAdd2}
+                    paramountShow={this.state.amazonShow}
+                    paramountAddClose={this.amazonAddClose}
+                    paramountAdd={this.amazonAdd}
+                    paramountAdd2={this.amazonAdd2}
 
-                    amazonShow={this.state.amazonShow}
-                    amazonAddClose={this.amazonAddClose}
-                    amazonAdd={this.amazonAdd}
-                    amazonAdd2={this.amazonAdd2}
+                    peacockShow={this.state.peacockShow}
+                    peacockAddClose={this.peacockAddClose}
+                    peacockAdd={this.peacockAdd}
+                    peacockAdd2={this.peacockAdd2}
                 />
                 <Container text>
                     <div className="total">
