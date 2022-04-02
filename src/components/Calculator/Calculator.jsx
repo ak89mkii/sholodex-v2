@@ -16,9 +16,8 @@ import Popup from '../Popup/Popup'
 class Calculator extends Component {
     state = {
         appleShow: false,
-        appleIcon: undefined,
         amazonShow: false,
-        amazonIcon: undefined,
+        selectedIcon: [],
         amount: 0
     }
 
@@ -26,26 +25,26 @@ class Calculator extends Component {
     appleAddClick = () => this.setState((prevState) => ({ appleShow: !prevState.appleShow, }))
     appleAddClose = () => this.setState({ appleShow: false })
     appleAdd = () => {
-        this.setState({
+        this.setState(prevState => ({
             amount: this.state.amount + 5,
-            appleIcon: apple,
-        })
+            selectedIcon: [...prevState.selectedIcon, apple]
+        }))
     }
     
     // Function Amazon:
     amazonAddClick = () => this.setState((prevState) => ({ amazonShow: !prevState.amazonShow, }))
     amazonAddClose = () => this.setState({ amazonShow: false })
     amazonAdd = () => {
-        this.setState({
+        this.setState(prevState => ({
             amount: this.state.amount + 9,
-            amazonIcon: amazon,
-        })
+            selectedIcon: [...prevState.selectedIcon, amazon]
+        }))
     }
     amazonAdd2 = () => {
-        this.setState({
+        this.setState(prevState => ({
             amount: this.state.amount + 15,
-            amazonIcon: amazon,
-        })
+            selectedIcon: [...prevState.selectedIcon, amazon]
+        }))
     }
 
     render() {
@@ -67,9 +66,10 @@ class Calculator extends Component {
                     <div className="total">
                         <h1>Subscriptions Total</h1>
                         <h5>(Cost Rounded to Nearest Dollar)</h5>
-                        <h1>${this.state.amount}</h1>
-                        <img className="icon2" src={this.state.appleIcon}/>
-                        <img className="icon2" src={this.state.amazonIcon}/>
+                        <h1 className="number">${this.state.amount}</h1>
+                        {this.state.selectedIcon.map((icon) => (
+                            <img className="icon2" src={icon}/>
+                        ))}
                     </div>
                 </Container>
                  <Container>
