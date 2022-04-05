@@ -17,6 +17,8 @@ class Calculator extends Component {
     state = {
         appleShow: false,
         amazonShow: false,
+        crShow: false,
+        disneyShow: false,
         selectedIcon: [],
         amount: 0
     }
@@ -39,16 +41,226 @@ class Calculator extends Component {
     amazonAddClick = () => this.setState((prevState) => ({ amazonShow: !prevState.amazonShow, }))
     amazonAddClose = () => this.setState({ amazonShow: false })
     amazonAdd = () => {
-        this.setState(prevState => ({
-            amount: this.state.amount + 9,
-            selectedIcon: [...prevState.selectedIcon, amazon]
-        }))
+        if (this.state.selectedIcon.indexOf(amazon) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 9,
+                selectedIcon: [...prevState.selectedIcon, amazon]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
     }
     amazonAdd2 = () => {
-        this.setState(prevState => ({
-            amount: this.state.amount + 15,
-            selectedIcon: [...prevState.selectedIcon, amazon]
-        }))
+        if (this.state.selectedIcon.indexOf(amazon) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 15,
+                selectedIcon: [...prevState.selectedIcon, amazon]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Crunchyroll:
+    crAddClick = () => this.setState((prevState) => ({ crShow: !prevState.crShow, }))
+    crAddClose = () => this.setState({ crShow: false })
+    crAdd = () => {
+        if (this.state.selectedIcon.indexOf(cr) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, cr]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    crAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(cr) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 10,
+                selectedIcon: [...prevState.selectedIcon, cr]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    crAdd3 = () => {
+        if (this.state.selectedIcon.indexOf(cr) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 15,
+                selectedIcon: [...prevState.selectedIcon, cr]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Disney:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Funimation:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function HBO:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Hulu:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Netflix:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Paramount:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+
+    // Function Peacock:
+    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
+    disneyAddClose = () => this.setState({ disneyShow: false })
+    disneyAdd = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 8,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    disneyAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(disney) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 14,
+                selectedIcon: [...prevState.selectedIcon, disney]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
     }
 
     render() {
@@ -69,38 +281,39 @@ class Calculator extends Component {
                     crAddClose={this.crAddClose}
                     crAdd={this.crAdd}
                     crAdd2={this.crAdd2}
+                    crAdd3={this.crAdd3}
 
-                    disneyShow={this.state.amazonShow}
+                    disneyShow={this.state.disneyShow}
                     disneyAddClose={this.disneyAddClose}
                     disneyAdd={this.disneyAdd}
                     disneyAdd2={this.disneyAdd2}
 
                     // Modals: 5 to 8
-                    funimationShow={this.state.amazonShow}
-                    funimationAddClose={this.amazonAddClose}
-                    funimationAdd={this.amazonAdd}
-                    funimationAdd2={this.amazonAdd2}
+                    funimationShow={this.state.funimationShow}
+                    funimationAddClose={this.funimationAddClose}
+                    funimationAdd={this.funimationAdd}
+                    funimationAdd2={this.funimationAdd2}
 
-                    hboShow={this.state.amazonShow}
-                    hboAddClose={this.amazonAddClose}
-                    hboAdd={this.amazonAdd}
-                    hboAdd2={this.amazonAdd2}
+                    hboShow={this.state.hboShow}
+                    hboAddClose={this.hboAddClose}
+                    hboAdd={this.hboAdd}
+                    hboAdd2={this.hboAdd2}
 
-                    huluShow={this.state.amazonShow}
-                    huluAddClose={this.amazonAddClose}
-                    huluhuluAdd={this.amazonAdd}
-                    huluAdd2={this.amazonAdd2}
+                    huluShow={this.state.huluShow}
+                    huluAddClose={this.huluAddClose}
+                    huluAdd={this.huluAdd}
+                    huluAdd2={this.huluAdd2}
 
-                    netflixShow={this.state.amazonShow}
-                    netflixAddClose={this.amazonAddClose}
-                    netflixAdd={this.amazonAdd}
-                    netflixAdd2={this.amazonAdd2}
+                    netflixShow={this.state.netflixShow}
+                    netflixAddClose={this.netflixAddClose}
+                    netflixAdd={this.netflixAdd}
+                    netflixAdd2={this.netflixAdd2}
                     
                     // Modals: 9 to 10
-                    paramountShow={this.state.amazonShow}
-                    paramountAddClose={this.amazonAddClose}
-                    paramountAdd={this.amazonAdd}
-                    paramountAdd2={this.amazonAdd2}
+                    paramountShow={this.state.paramountShow}
+                    paramountAddClose={this.paramountAddClose}
+                    paramountAdd={this.paramountAdd}
+                    paramountAdd2={this.paramountAdd2}
 
                     peacockShow={this.state.peacockShow}
                     peacockAddClose={this.peacockAddClose}
@@ -126,36 +339,36 @@ class Calculator extends Component {
                             <Image className="icon" src={amazon} onClick={this.amazonAddClick}/>
                         </Col>
                         <Col>
-                            <Image className="icon" src={cr} />
+                            <Image className="icon" src={cr} onClick={this.crAddClick}/>
                         </Col>
                         <Col>
-                            <Image className="icon" src={disney} />
-                        </Col>
-                    </Row>
-                    {/* <br></br> */}
-
-                    <Row columns={1}>
-                        <Col>
-                            <Image className="icon" src={funimation} />
-                        </Col>
-                        <Col>
-                            <Image className="icon" src={hbo} />
-                        </Col>
-                        <Col>
-                            <Image className="icon" src={hulu} />
-                        </Col>
-                        <Col>
-                            <Image className="icon" src={netflix} />
+                            <Image className="icon" src={disney} onClick={this.disneyAddClick}/>
                         </Col>
                     </Row>
                     {/* <br></br> */}
 
                     <Row columns={1}>
                         <Col>
-                            <Image className="icon" src={paramount} />
+                            <Image className="icon" src={funimation} onClick={this.funimationAddClick}/>
                         </Col>
                         <Col>
-                            <Image className="icon" src={peacock} />
+                            <Image className="icon" src={hbo} onClick={this.hboAddClick}/>
+                        </Col>
+                        <Col>
+                            <Image className="icon" src={hulu} onClick={this.huluAddClick}/>
+                        </Col>
+                        <Col>
+                            <Image className="icon" src={netflix} onClick={this.netflixAddClick}/>
+                        </Col>
+                    </Row>
+                    {/* <br></br> */}
+
+                    <Row columns={1}>
+                        <Col>
+                            <Image className="icon" src={paramount} onClick={this.paramountAddClick}/>
+                        </Col>
+                        <Col>
+                            <Image className="icon" src={peacock} onClick={this.peacockAddClick}/>
                         </Col>
                         {/* <Col>
                             <Image className="icon" src={apple} />
