@@ -100,13 +100,19 @@ const Popup = (props) => {
             {/* HBO */}
             <Modal show={props.hboShow} onHide={props.hboAddClose} animation={false}>
                 <Modal.Header closeButton>
-                    <Modal.Title>HBO</Modal.Title>
+                    <Modal.Title>HBO Max</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>HBO is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
                 <Modal.Footer>
                     <Container>
-                        <h5 className='s1'>Check out Crunchyroll</h5>
+                        <h5 className='s1'>Select a Tier:</h5>
                     </Container>
+                    <Button variant="warning" onClick={props.disneyAdd}>
+                        <b>With Ads</b> | $7.99
+                    </Button>
+                    <Button variant="warning" onClick={props.disneyAdd2}>
+                        <b>Ad-Free</b> | $13.99
+                    </Button>
                 </Modal.Footer>
             </Modal>
 
