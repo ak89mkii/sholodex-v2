@@ -89,20 +89,11 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Funimation</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Funimation . </Modal.Body>
+                <Modal.Body>Funimation is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
                 <Modal.Footer>
                     <Container>
-                        <h5 className='s1'>Select a Tier:</h5>
+                        <h5 className='s1'>Check out Crunchyroll</h5>
                     </Container>
-                    <Button variant="warning" onClick={props.funimationAdd}>
-                        <b>Premium</b> $4.99
-                    </Button>
-                    <Button variant="warning" onClick={props.funimationAdd}>
-                        <b>Premium Plus</b> $4.99
-                    </Button>
-                    <Button variant="warning" onClick={props.funimationAdd}>
-                        <b>Premium</b> $4.99
-                    </Button>
                 </Modal.Footer>
             </Modal>
 

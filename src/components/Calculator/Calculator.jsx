@@ -120,47 +120,27 @@ class Calculator extends Component {
     }
 
     // Function Funimation:
-    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
-    disneyAddClose = () => this.setState({ disneyShow: false })
-    disneyAdd = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
-            this.setState(prevState => ({
-                amount: this.state.amount + 8,
-                selectedIcon: [...prevState.selectedIcon, disney]
-            }))
-        } else {
-            alert("You already selected a tier from this company.");
-        }
-    }
-    disneyAdd2 = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
-            this.setState(prevState => ({
-                amount: this.state.amount + 14,
-                selectedIcon: [...prevState.selectedIcon, disney]
-            }))
-        } else {
-            alert("You already selected a tier from this company.");
-        }
-    }
+    funimationAddClick = () => this.setState((prevState) => ({ funimationShow: !prevState.funimationShow, }))
+    funimationAddClose = () => this.setState({ funimationShow: false })
 
     // Function HBO:
-    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
-    disneyAddClose = () => this.setState({ disneyShow: false })
-    disneyAdd = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    hboAddClick = () => this.setState((prevState) => ({ hboShow: !prevState.hboShow, }))
+    hboAddClose = () => this.setState({ hboShow: false })
+    hboAdd = () => {
+        if (this.state.selectedIcon.indexOf(hbo) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 8,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, hbo]
             }))
         } else {
             alert("You already selected a tier from this company.");
         }
     }
-    disneyAdd2 = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    hboAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(hbo) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 14,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, hbo]
             }))
         } else {
             alert("You already selected a tier from this company.");
@@ -168,23 +148,23 @@ class Calculator extends Component {
     }
 
     // Function Hulu:
-    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
-    disneyAddClose = () => this.setState({ disneyShow: false })
-    disneyAdd = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    huluAddClick = () => this.setState((prevState) => ({ huluShow: !prevState.huluShow, }))
+    huluAddClose = () => this.setState({ huluShow: false })
+    huluAdd = () => {
+        if (this.state.selectedIcon.indexOf(hulu) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 8,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, hulu]
             }))
         } else {
             alert("You already selected a tier from this company.");
         }
     }
-    disneyAdd2 = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    huluAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(hulu) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 14,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, hulu]
             }))
         } else {
             alert("You already selected a tier from this company.");
@@ -192,23 +172,23 @@ class Calculator extends Component {
     }
 
     // Function Netflix:
-    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
-    disneyAddClose = () => this.setState({ disneyShow: false })
-    disneyAdd = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    netflixAddClick = () => this.setState((prevState) => ({ netflixShow: !prevState.netflixShow, }))
+    netflixAddClose = () => this.setState({ netflixShow: false })
+    netflixAdd = () => {
+        if (this.state.selectedIcon.indexOf(netflix) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 8,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, netflix]
             }))
         } else {
             alert("You already selected a tier from this company.");
         }
     }
-    disneyAdd2 = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    netflixAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(netflix) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 14,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, netflix]
             }))
         } else {
             alert("You already selected a tier from this company.");
@@ -216,23 +196,23 @@ class Calculator extends Component {
     }
 
     // Function Paramount:
-    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
-    disneyAddClose = () => this.setState({ disneyShow: false })
-    disneyAdd = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    paramountAddClick = () => this.setState((prevState) => ({ paramountShow: !prevState.paramountShow, }))
+    paramountAddClose = () => this.setState({ paramountShow: false })
+    paramountAdd = () => {
+        if (this.state.selectedIcon.indexOf(paramount) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 8,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, paramount]
             }))
         } else {
             alert("You already selected a tier from this company.");
         }
     }
-    disneyAdd2 = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    paramountAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(paramount) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 14,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, paramount]
             }))
         } else {
             alert("You already selected a tier from this company.");
@@ -240,23 +220,23 @@ class Calculator extends Component {
     }
 
     // Function Peacock:
-    disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
-    disneyAddClose = () => this.setState({ disneyShow: false })
-    disneyAdd = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    peacockAddClick = () => this.setState((prevState) => ({ peacockShow: !prevState.peacockShow, }))
+    peacockAddClose = () => this.setState({ peacockShow: false })
+    peacockAdd = () => {
+        if (this.state.selectedIcon.indexOf(peacock) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 8,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, peacock]
             }))
         } else {
             alert("You already selected a tier from this company.");
         }
     }
-    disneyAdd2 = () => {
-        if (this.state.selectedIcon.indexOf(disney) == -1) {
+    peacockAdd2 = () => {
+        if (this.state.selectedIcon.indexOf(peacock) == -1) {
             this.setState(prevState => ({
                 amount: this.state.amount + 14,
-                selectedIcon: [...prevState.selectedIcon, disney]
+                selectedIcon: [...prevState.selectedIcon, peacock]
             }))
         } else {
             alert("You already selected a tier from this company.");
@@ -291,8 +271,6 @@ class Calculator extends Component {
                     // Modals: 5 to 8
                     funimationShow={this.state.funimationShow}
                     funimationAddClose={this.funimationAddClose}
-                    funimationAdd={this.funimationAdd}
-                    funimationAdd2={this.funimationAdd2}
 
                     hboShow={this.state.hboShow}
                     hboAddClose={this.hboAddClose}
