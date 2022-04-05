@@ -97,6 +97,71 @@ const Popup = (props) => {
                 </Modal.Footer>
             </Modal>
 
+            {/* HBO */}
+            <Modal show={props.hboShow} onHide={props.hboAddClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>HBO</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>HBO is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Footer>
+                    <Container>
+                        <h5 className='s1'>Check out Crunchyroll</h5>
+                    </Container>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Hulu */}
+            <Modal show={props.huluShow} onHide={props.huluAddClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Hulu</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Hulu is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Footer>
+                    <Container>
+                        <h5 className='s1'>Check out Crunchyroll</h5>
+                    </Container>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Netflix */}
+            <Modal show={props.netflixShow} onHide={props.netflixAddClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Netflix</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Netflix is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Footer>
+                    <Container>
+                        <h5 className='s1'>Check out Crunchyroll</h5>
+                    </Container>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Paramount */}
+            <Modal show={props.paramountShow} onHide={props.paramountAddClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Paramount</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Paramount is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Footer>
+                    <Container>
+                        <h5 className='s1'>Check out Crunchyroll</h5>
+                    </Container>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Peacock */}
+            <Modal show={props.peacockShow} onHide={props.peacockAddClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Peacock</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Peacock is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Footer>
+                    <Container>
+                        <h5 className='s1'>Check out Crunchyroll</h5>
+                    </Container>
+                </Modal.Footer>
+            </Modal>
+
         </div>
     )
 }
