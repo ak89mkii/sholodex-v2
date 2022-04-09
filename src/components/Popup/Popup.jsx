@@ -207,7 +207,7 @@ const Popup = (props) => {
                     <Button variant="warning" onClick={props.peacockAdd2}>
                         <b>Peacock Premium</b> | $4.99
                     </Button>
-                    <Button variant="warning" onClick={props.paramountAdd3}>
+                    <Button variant="warning" onClick={props.peacockAdd3}>
                         <b>Peacock Premium Plus</b> | $9.99
                     </Button>
                 </Modal.Footer>
