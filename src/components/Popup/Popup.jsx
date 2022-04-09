@@ -48,11 +48,14 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Crunchyroll</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Crunchyroll offers a free limited account with ads or a (14) fourteen-day free "Premium" trial. There are (3) three "Premium" tiers , <b>Fan</b> at $7.99, <b>Mega Fan</b> at $9.99, or <b>Ultimate Fan</b> at $14.99 per month. All (3) three "Premium" tiers have no ads. <b>Mega Fan</b> and <b>Ultimate Fan</b> subscriptions allow for simultaneous streaming and access to certain Cruncyroll gifted merchandise and events.</Modal.Body>
+                <Modal.Body>Crunchyroll offers a <b>Free</b> limited account with ads or a (14) fourteen-day free "Premium" trial. There are (3) three "Premium" tiers , <b>Fan</b> at $7.99, <b>Mega Fan</b> at $9.99, or <b>Ultimate Fan</b> at $14.99 per month. All (3) three "Premium" tiers have no ads. <b>Mega Fan</b> and <b>Ultimate Fan</b> subscriptions allow for simultaneous streaming and access to certain Cruncyroll gifted merchandise and events.</Modal.Body>
                 <Modal.Footer>
                     <Container>
                         <h5 className='s1'>Select a Tier:</h5>
                     </Container>
+                    <Button variant="warning" onClick={props.crAdd4}>
+                        <b>Free</b> | Free
+                    </Button>
                     <Button variant="warning" onClick={props.crAdd}>
                         <b>Fan</b> | $7.99
                     </Button>
@@ -193,11 +196,20 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Peacock</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Peacock is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Body>Peacock offers a (7) seven-day free trial as well asas a <b>Free</b> ad-supported limited tier. There are also (2) two paid tiers, <b>Peacock Premium</b>, with ads, for $4.99 or <b>Peacock Premium Plus</b>, without ads, for $9.99 per month.You acan also pay an upfront cost of $49.99 for the former or $99.99 for the latter for about a $10 or $20 annual savings respectively.</Modal.Body>
                 <Modal.Footer>
-                    <Container>
-                        <h5 className='s1'>Check out Crunchyroll</h5>
+                <Container>
+                        <h5 className='s1'>Select a Tier:</h5>
                     </Container>
+                    <Button variant="warning" onClick={props.peacockAdd}>
+                        <b>Free</b> | Free
+                    </Button>
+                    <Button variant="warning" onClick={props.peacockAdd2}>
+                        <b>Peacock Premium</b> | $4.99
+                    </Button>
+                    <Button variant="warning" onClick={props.paramountAdd3}>
+                        <b>Peacock Premium Plus</b> | $9.99
+                    </Button>
                 </Modal.Footer>
             </Modal>
 

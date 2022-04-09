@@ -96,6 +96,16 @@ class Calculator extends Component {
             alert("You already selected a tier from this company.");
         }
     }
+    crAdd4 = () => {
+        if (this.state.selectedIcon.indexOf(cr) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 0,
+                selectedIcon: [...prevState.selectedIcon, cr]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
 
     // Function Disney:
     disneyAddClick = () => this.setState((prevState) => ({ disneyShow: !prevState.disneyShow, }))
@@ -279,7 +289,7 @@ class Calculator extends Component {
     peacockAdd = () => {
         if (this.state.selectedIcon.indexOf(peacock) == -1) {
             this.setState(prevState => ({
-                amount: this.state.amount + 8,
+                amount: this.state.amount + 0,
                 selectedIcon: [...prevState.selectedIcon, peacock]
             }))
         } else {
@@ -289,7 +299,17 @@ class Calculator extends Component {
     peacockAdd2 = () => {
         if (this.state.selectedIcon.indexOf(peacock) == -1) {
             this.setState(prevState => ({
-                amount: this.state.amount + 14,
+                amount: this.state.amount + 5,
+                selectedIcon: [...prevState.selectedIcon, peacock]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    peacockAdd3 = () => {
+        if (this.state.selectedIcon.indexOf(peacock) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 10,
                 selectedIcon: [...prevState.selectedIcon, peacock]
             }))
         } else {
@@ -316,6 +336,7 @@ class Calculator extends Component {
                     crAdd={this.crAdd}
                     crAdd2={this.crAdd2}
                     crAdd3={this.crAdd3}
+                    crAdd4={this.crAdd4}
 
                     disneyShow={this.state.disneyShow}
                     disneyAddClose={this.disneyAddClose}
@@ -357,6 +378,7 @@ class Calculator extends Component {
                     peacockAddClose={this.peacockAddClose}
                     peacockAdd={this.peacockAdd}
                     peacockAdd2={this.peacockAdd2}
+                    peacockAdd3={this.peacockAdd3}
                 />
                 <Container text>
                     <div className="total">
