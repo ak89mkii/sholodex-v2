@@ -48,7 +48,7 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Crunchyroll</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Crunchyroll offers a free limited account with ads or a (14) fourteen-day free "Premium" trial. There are (3) three "Premium" tiers , <b>Fan</b> at $7.99, <b>Mega Fan</b> at $9.99, or <b>Ultimate Fan</b> at $14.99 per month. All 3 "Premium" tiers have no ads. <b>Mega Fan</b> and <b>Ultimate Fan</b> subscriptions allow for simultaneous streaming and access to certain Cruncyroll gifted merchandise and events.</Modal.Body>
+                <Modal.Body>Crunchyroll offers a free limited account with ads or a (14) fourteen-day free "Premium" trial. There are (3) three "Premium" tiers , <b>Fan</b> at $7.99, <b>Mega Fan</b> at $9.99, or <b>Ultimate Fan</b> at $14.99 per month. All (3) three "Premium" tiers have no ads. <b>Mega Fan</b> and <b>Ultimate Fan</b> subscriptions allow for simultaneous streaming and access to certain Cruncyroll gifted merchandise and events.</Modal.Body>
                 <Modal.Footer>
                     <Container>
                         <h5 className='s1'>Select a Tier:</h5>
@@ -102,16 +102,16 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>HBO Max</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>HBO is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Body>HBO Max does not offer a free trial period. Tiers include a <b>With Ads</b> level at $9.99 per month or an <b>Ad-Free</b> level at $14.99 per month. Users may also sign up for a yearly membership for an upfront cost of $99.99 <b>With Ads</b> or $149.99 <b>Ad-Free</b>. This costs about $20 less for the former and $30 less for the latter than paying monthly for a year.</Modal.Body>
                 <Modal.Footer>
                     <Container>
                         <h5 className='s1'>Select a Tier:</h5>
                     </Container>
-                    <Button variant="warning" onClick={props.disneyAdd}>
-                        <b>With Ads</b> | $7.99
+                    <Button variant="warning" onClick={props.hboAdd}>
+                        <b>With Ads</b> | $9.99
                     </Button>
-                    <Button variant="warning" onClick={props.disneyAdd2}>
-                        <b>Ad-Free</b> | $13.99
+                    <Button variant="warning" onClick={props.hboAdd2}>
+                        <b>Ad-Free</b> | $14.99
                     </Button>
                 </Modal.Footer>
             </Modal>
@@ -121,11 +121,23 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Hulu</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Hulu is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Body>Hulu offers a (30) thirty-day free trial of either <b>Hulu</b> or <b>Hulu (No Ads)</b> tiers as well as (4) four  paid subscription tiers. Tiers include a <b>Hulu</b> level at $9.99 per month, a <b>Hulu (No Ads)</b> level at $14.99 per month, <b>Hulu, Live TV, Disney+, & ESPN+</b> at $69.99, or a $75.99 <b>Hulu (No Ads), Live TV, Disney+, & ESPN+</b> membership.</Modal.Body>
                 <Modal.Footer>
                     <Container>
-                        <h5 className='s1'>Check out Crunchyroll</h5>
+                        <h5 className='s1'>Select a Tier:</h5>
                     </Container>
+                    <Button variant="warning" onClick={props.huluAdd}>
+                        <b>Hulu</b> | $6.99
+                    </Button>
+                    <Button variant="warning" onClick={props.huluAdd2}>
+                        <b>Hulu (No Ads)</b> | $12.99
+                    </Button>
+                    <Button variant="warning" onClick={props.huluAdd3}>
+                        <b>Hulu, Live TV, Disney+, & ESPN+</b> | $69.99
+                    </Button>
+                    <Button variant="warning" onClick={props.huluAdd4}>
+                        <b>Hulu (No Ads), Live TV, Disney+, & ESPN+</b> | $75.99
+                    </Button>
                 </Modal.Footer>
             </Modal>
 
@@ -134,11 +146,20 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Netflix</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Netflix is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Body>Netflix does not offer a free trial period. Tiers include a <b>Basic</b> level at $9.99 per month, a <b>Standard</b> level at $15.49 per month, or a $19.99 <b>Premium</b> subscription.</Modal.Body>
                 <Modal.Footer>
                     <Container>
-                        <h5 className='s1'>Check out Crunchyroll</h5>
+                        <h5 className='s1'>Select a Tier:</h5>
                     </Container>
+                    <Button variant="warning" onClick={props.netflixAdd}>
+                        <b>Basic</b> | $9.99
+                    </Button>
+                    <Button variant="warning" onClick={props.netflixAdd2}>
+                        <b>Standard</b> | $15.49
+                    </Button>
+                    <Button variant="warning" onClick={props.netflixAdd3}>
+                        <b>Premium</b> | $19.99
+                    </Button>
                 </Modal.Footer>
             </Modal>
 
