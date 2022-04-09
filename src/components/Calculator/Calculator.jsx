@@ -235,7 +235,7 @@ class Calculator extends Component {
     paramountAdd = () => {
         if (this.state.selectedIcon.indexOf(paramount) == -1) {
             this.setState(prevState => ({
-                amount: this.state.amount + 8,
+                amount: this.state.amount + 5,
                 selectedIcon: [...prevState.selectedIcon, paramount]
             }))
         } else {
@@ -245,7 +245,27 @@ class Calculator extends Component {
     paramountAdd2 = () => {
         if (this.state.selectedIcon.indexOf(paramount) == -1) {
             this.setState(prevState => ({
-                amount: this.state.amount + 14,
+                amount: this.state.amount + 10,
+                selectedIcon: [...prevState.selectedIcon, paramount]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    paramountAdd3 = () => {
+        if (this.state.selectedIcon.indexOf(paramount) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 12,
+                selectedIcon: [...prevState.selectedIcon, paramount]
+            }))
+        } else {
+            alert("You already selected a tier from this company.");
+        }
+    }
+    paramountAdd4 = () => {
+        if (this.state.selectedIcon.indexOf(paramount) == -1) {
+            this.setState(prevState => ({
+                amount: this.state.amount + 15,
                 selectedIcon: [...prevState.selectedIcon, paramount]
             }))
         } else {
@@ -330,6 +350,8 @@ class Calculator extends Component {
                     paramountAddClose={this.paramountAddClose}
                     paramountAdd={this.paramountAdd}
                     paramountAdd2={this.paramountAdd2}
+                    paramountAdd3={this.paramountAdd3}
+                    paramountAdd4={this.paramountAdd4}
 
                     peacockShow={this.state.peacockShow}
                     peacockAddClose={this.peacockAddClose}

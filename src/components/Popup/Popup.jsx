@@ -166,13 +166,25 @@ const Popup = (props) => {
             {/* Paramount */}
             <Modal show={props.paramountShow} onHide={props.paramountAddClose} animation={false}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Paramount</Modal.Title>
+                    <Modal.Title>Paramount+</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Paramount is merging with Crunchyroll, which was aquired by Funimation's parent company Sony.</Modal.Body>
+                <Modal.Body>Paramount+ offers a (30) thirty-day free trial then offers (2) two main subscription tiers, a <b>Essential</b> level at $4.99 per month or a <b>Premium</b> level at $9.99 per month. There are also Showtime bundles at a reduced total cost, <b>Essential Plan + SHOWTIME</b> at $11.99 per month or <b>Premium Plan + SHOWTIME</b> at $14.99 per month. Paramount+ offers annual subscriptions for both tiers and bundles, where you can save about $10, $20, $24, or $30 (from least expensive to most expensive subscriptions) in total versus paying monthly for a year.</Modal.Body>
                 <Modal.Footer>
                     <Container>
-                        <h5 className='s1'>Check out Crunchyroll</h5>
+                        <h5 className='s1'>Select a Tier:</h5>
                     </Container>
+                    <Button variant="warning" onClick={props.paramountAdd2}>
+                        <b>Essential</b> | $4.99
+                    </Button>
+                    <Button variant="warning" onClick={props.paramountAdd2}>
+                        <b>Premium</b> | $9.99
+                    </Button>
+                    <Button variant="warning" onClick={props.paramountAdd3}>
+                        <b>Essential Plan + SHOWTIME</b> | $11.99
+                    </Button>
+                    <Button variant="warning" onClick={props.paramountAdd4}>
+                        <b>Premium Plan + SHOWTIME</b> | $14.99
+                    </Button>
                 </Modal.Footer>
             </Modal>
 
