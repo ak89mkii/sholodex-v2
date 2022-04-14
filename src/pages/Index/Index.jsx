@@ -6,7 +6,6 @@ import Calculator from '../../components/Calculator/Calculator'
 import Footer from '../../components/Footer/Footer'
 import sun from '../../Img/sun.png'
 import moon from '../../Img/moon.png'
-import { Container } from 'react-bootstrap'
 
 
 class Home extends Component {
@@ -40,16 +39,14 @@ class Home extends Component {
     render() {
         return (
             <div className={this.state.mode} ref={this.contextRef}>
-                <Container>
-                    <Nav 
-                        open={this.state.false}
-                        mode={this.state.mode}
-                        icon={this.state.icon}
-                        toggleMode={this.toggleMode}
-                    />
-                    <S1 />
-                    <Calculator />
-                </Container>
+                <Nav 
+                    open={this.state.false}
+                    mode={this.state.mode}
+                    icon={this.state.icon}
+                    toggleMode={this.toggleMode}
+                />
+                <S1 />
+                <Calculator />
                 <Footer />
             </div>
         )

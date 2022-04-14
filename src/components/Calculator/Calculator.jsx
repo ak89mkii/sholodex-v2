@@ -380,7 +380,7 @@ class Calculator extends Component {
                     peacockAdd2={this.peacockAdd2}
                     peacockAdd3={this.peacockAdd3}
                 />
-                <Container text>
+                <Container>
                     <div className="total">
                         <h1>Month Total</h1>
                         <h5>(Cost Rounded Up to Nearest Dollar)</h5>
@@ -390,7 +390,7 @@ class Calculator extends Component {
                         ))}
                     </div>
                 </Container>
-                 <Container>
+                <Container>
                     <Row columns={1}>
                         <Col>
                             <Image className="icon" src={apple} onClick={this.appleAddClick}/>

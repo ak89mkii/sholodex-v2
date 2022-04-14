@@ -6,25 +6,29 @@ import Toggle from '../Toggle/Toggle.jsx';
 
 const Nav = (props) => {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Container>
+        <Navbar className="nav" bg="dark" variant="dark">
             <Navbar.Brand>
                 <div className="d-inline-block align-center">
                 {/* <Link to="/"> */}
-                <img
+                <Image
                     alt=""
                     src={logo}
                     className="logo"
+                    fluid
                 />            
                 {/* </Link> */}
                 {' '}
                 </div>
             </Navbar.Brand>
-            <Navbar.Brand></Navbar.Brand>
+            <Navbar.Brand>
             <Toggle
                 icon={props.icon}
                 toggleMode={props.toggleMode}
             />
+            </Navbar.Brand>
         </Navbar>
+        </Container>
     )
 }
 

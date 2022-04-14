@@ -38,7 +38,7 @@
 }
 
 .logo {
-  width: 300px;
+  width: 200px;
   border: black;
   border-style: solid;
   border-width: 10px;
@@ -83,6 +83,11 @@
 .d-inline-block {
   padding: 10px;
 }
+
+.nav {
+  width: fluid;
+}
+
 .iconSize {
   height: 100px;
 }
@@ -104,7 +109,7 @@
   border-style: solid;
   border-width: 10px;
   border-radius: 15px;
-  width: 400px;
+  width: fluid;
   background-color: rgb(75, 125, 226);
   text-align: center;  
   margin: 0 auto;
@@ -145,7 +150,7 @@
 }
 
 
-/* Titles : */
+/* Titles: */
 
 .title {
   text-align: center;
