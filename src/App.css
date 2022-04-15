@@ -63,6 +63,7 @@
 .light {
   background-color: white;  
   color: black;
+  padding-bottom: 100vh;
 }
 
 .lightNoText {
@@ -71,7 +72,8 @@
 
 .dark { 
   background-color: #252528;
-  color: white;
+  color: white; 
+  padding-bottom: 100vh;
 }
 
 .darkNoText { 
@@ -140,6 +142,9 @@
   background-color: rgb(27, 27, 27);
   color: white;
   padding: 10px;
+  width:100%;
+  position: absolute;
+  bottom: 0;
 }
 
 

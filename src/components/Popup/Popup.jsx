@@ -29,7 +29,7 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Amazon Prime Video</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Amazon Prime Video offers a (30) thirty-day free trial, then costs $8.99 per month for <b>Prime Video</b> only or $14.99 per month  for a <b>Full Amazon Prime</b> membership. You can also pay an upfront cost of $139 for a yearly membership, costing about $40 less than paying $14.99 per month for a year, which would total about $180. </Modal.Body>
+                <Modal.Body>Amazon offers a (30) thirty-day free trial, then costs $8.99 per month for <b>Prime Video</b> only or $14.99 per month  for a <b>Full Amazon Prime</b> membership. You can also pay an upfront cost of $139 for a yearly membership, costing about $40 less than paying $14.99 per month for a year, which would total about $180. </Modal.Body>
                 <Modal.Footer>
                     <Container>
                         <h5 className='s1'>Select a Tier:</h5>
@@ -171,7 +171,7 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Paramount+</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Paramount+ offers a (30) thirty-day free trial then offers (2) two main subscription tiers, a <b>Essential</b> level at $4.99 per month or a <b>Premium</b> level at $9.99 per month. There are also Showtime bundles at a reduced total cost, <b>Essential Plan + SHOWTIME</b> at $11.99 per month or <b>Premium Plan + SHOWTIME</b> at $14.99 per month. Paramount+ offers annual subscriptions for both tiers and bundles, where you can save about $10, $20, $24, or $30 (from least expensive to most expensive subscriptions) in total versus paying monthly for a year.</Modal.Body>
+                <Modal.Body>Paramount+ offers a (30) thirty-day free trial then offers (2) two main subscription tiers, an <b>Essential</b> level at $4.99 per month or a <b>Premium</b> level at $9.99 per month. There are also Showtime bundles at a reduced total cost, <b>Essential Plan + SHOWTIME</b> at $11.99 per month or <b>Premium Plan + SHOWTIME</b> at $14.99 per month. Paramount+ offers annual subscriptions for both tiers and bundles, where you can save about $10, $20, $24, or $30 (from least expensive to most expensive subscriptions) in total versus paying monthly for a year.</Modal.Body>
                 <Modal.Footer>
                     <Container>
                         <h5 className='s1'>Select a Tier:</h5>

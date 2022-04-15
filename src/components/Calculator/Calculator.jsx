@@ -15,12 +15,6 @@ import Popup from '../Popup/Popup'
 
 class Calculator extends Component {
     state = {
-        appleShow: false,
-        amazonShow: false,
-        crShow: false,
-        disneyShow: false,
-        funimationShow: false,
-        hboShow: false,
         selectedIcon: [],
         amount: 0
     }
