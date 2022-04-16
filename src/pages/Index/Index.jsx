@@ -39,15 +39,17 @@ class Home extends Component {
     render() {
         return (
             <div className={this.state.mode} ref={this.contextRef}>
-                <Nav 
-                    open={this.state.false}
-                    mode={this.state.mode}
-                    icon={this.state.icon}
-                    toggleMode={this.toggleMode}
-                />
-                <S1 />
-                <Calculator />
-                <Footer />
+                <div className='halo'>
+                    <Nav 
+                        open={this.state.false}
+                        mode={this.state.mode}
+                        icon={this.state.icon}
+                        toggleMode={this.toggleMode}
+                    />
+                    <S1 />
+                    <Calculator />
+                    <Footer />
+                </div>
             </div>
         )
     }
