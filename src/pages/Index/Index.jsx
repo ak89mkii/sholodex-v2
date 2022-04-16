@@ -39,7 +39,7 @@ class Home extends Component {
     render() {
         return (
             <div className={this.state.mode} ref={this.contextRef}>
-                <div className='halo'>
+                <div className="halo">
                     <Nav 
                         open={this.state.false}
                         mode={this.state.mode}
@@ -48,6 +48,7 @@ class Home extends Component {
                     />
                     <S1 />
                     <Calculator />
+                    <br></br>
                     <Footer />
                 </div>
             </div>
