@@ -48,7 +48,7 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Crunchyroll</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Crunchyroll offers a <b>Free</b> limited account with ads or a (14) fourteen-day free "Premium" trial. There are (3) three "Premium" tiers , <b>Fan</b> at $7.99, <b>Mega Fan</b> at $9.99, or <b>Ultimate Fan</b> at $14.99 per month. All (3) three "Premium" tiers have no ads. <b>Mega Fan</b> and <b>Ultimate Fan</b> subscriptions allow for simultaneous streaming and access to certain Cruncyroll gifted merchandise and events.</Modal.Body>
+                <Modal.Body>Crunchyroll offers a <b>Free</b> limited account with ads or a (14) fourteen-day free "Premium" trial. There are (3) three "Premium" tiers , <b>Fan</b> at $7.99, <b>Mega Fan</b> at $9.99, or <b>Ultimate Fan</b> at $14.99 per month. All (3) three "Premium" tiers have no ads. <b>Mega Fan</b> and <b>Ultimate Fan</b> subscriptions allow for simultaneous streaming and access to certain Crunchyroll gifted merchandise and events.</Modal.Body>
                 <Modal.Footer>
                     <Container>
                         <h5 className='s1'>Select a Tier:</h5>
@@ -196,7 +196,7 @@ const Popup = (props) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Peacock</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Peacock offers a (7) seven-day free trial as well asas a <b>Free</b> ad-supported limited tier. There are also (2) two paid tiers, <b>Peacock Premium</b>, with ads, for $4.99 or <b>Peacock Premium Plus</b>, without ads, for $9.99 per month.You acan also pay an upfront cost of $49.99 for the former or $99.99 for the latter for about a $10 or $20 annual savings respectively.</Modal.Body>
+                <Modal.Body>Peacock offers a (7) seven-day free trial as well as a <b>Free</b> ad-supported limited tier. There are also (2) two paid tiers, <b>Peacock Premium</b>, with ads, for $4.99 or <b>Peacock Premium Plus</b>, without ads, for $9.99 per month. You can also pay an upfront cost of $49.99 for the former or $99.99 for the latter for about a $10 or $20 annual savings respectively.</Modal.Body>
                 <Modal.Footer>
                 <Container>
                         <h5 className='s1'>Select a Tier:</h5>
