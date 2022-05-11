@@ -21,7 +21,7 @@ class S1 extends Component {
                     <Row columns={1}>
                         <Col>
                             <Container text>
-                                <h1 className="s1TitleSub">The Show Lowdown Index </h1>
+                                <h1 className="s1TitleSub">Sholodex: The Show Lowdown Index </h1>
                                 <h5 className="s1">A breakdown of the most popular streaming services' pricing tiers and interactive monthly costs total calculator. Click an icon below to learn more.</h5>
                             </Container>
                             <br></br>
